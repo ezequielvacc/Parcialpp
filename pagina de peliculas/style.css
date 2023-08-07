@@ -1,0 +1,121 @@
+/* Reset de estilos para asegurar consistencia en diferentes navegadores */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 62.5%;
+}
+/* Estilo global para el cuerpo de la página */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6rem;
+    background-color: #f2f2f2;
+    color: #333;
+    margin: 2rem;
+}
+
+/* Estilo para los encabezados */
+h1, h2, h3 {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+h1 {
+    font-size: 3rem;
+}
+
+h2 {
+    font-size: 2rem;
+}
+
+h3 {
+    font-size: 2rem;
+}
+
+/* Estilo para los enlaces */
+a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Estilo para los botones */
+button, input[type="submit"] {
+    padding: 1rem 2rem;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 0.4rem;
+    cursor: pointer;
+}
+
+button:hover, input[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+/* Estilo para el formulario */
+form {
+    max-width: 60rem;
+    margin: 0 auto;
+}
+
+label {
+    display: block;
+    margin-bottom: 0.5rem;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    border: 0.1rem solid #ccc;
+    border-radius: 0.4rem;
+}
+
+textarea {
+    resize: vertical;
+}
+
+/* Estilo para las secciones */
+section {
+    margin-bottom: 4rem;
+    border: 0.1rem solid #ccc;
+    border-radius: 0.4rem;
+    padding: 2rem;
+}
+
+/* Estilo para las imágenes */
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Estilo para la navegación */
+nav {
+    background-color: #333;
+    color: #fff;
+    padding: 1rem;
+}
+
+nav ul {
+    list-style: none;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 2rem;
+}
+
+/* Estilo para el pie de página */
+footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: #333;
+    color: #fff;
+}
