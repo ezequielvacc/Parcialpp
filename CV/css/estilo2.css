@@ -1,0 +1,23 @@
+body{
+    background: linear-gradient(
+    to right, #06d7ee, #053d7eb4, #0ae2f1
+    );
+    background-size: 400% 400%;
+    animation: animated-backgroud 20s infinite ease-in-out;
+}
+@keyframes animated-backgroud {
+  0%{
+    background-position: 0 50%;
+  }
+  50%{
+    background-position: 100% 50%;
+  }
+  100%{
+    background-position: 0 50%;
+  }
+}
+
+
+html{
+  font-size: 62.5%;
+}
