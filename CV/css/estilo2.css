@@ -21,3 +21,9 @@ body{
 html{
   font-size: 62.5%;
 }
+.ejemplo{
+  display:flex;
+  justify-content: center;
+  
+
+}
