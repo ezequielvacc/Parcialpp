@@ -24,6 +24,7 @@ html{
 .ejemplo{
   display:flex;
   justify-content: center;
-  
-
+  }
+.card-body{
+  background-color: aquamarine;
 }
