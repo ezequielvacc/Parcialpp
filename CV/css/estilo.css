@@ -52,6 +52,9 @@
   --bs-form-invalid-color: #ea868f;
   --bs-form-invalid-border-color: #ea868f;
 }
+.todo{
+  font-size: medium;
+}
 #allcarr{
   display: flex;
   align-items: center;
