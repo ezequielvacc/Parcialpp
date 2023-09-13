@@ -1,10 +1,10 @@
 .body{
     overflow-x: hidden;
     height: 100vh;
-    background-image: linear-gradient(to right,rgb(101, 5, 5),rgb(24, 0, 0));
+    background-image: radial-gradient(rgb(255, 255, 255),rgb(26, 104, 249));
 }
 .header{
-background-color: rgba(69, 33, 33, 0.175);
+background-color: rgba(122, 93, 254, 0.175);
 
 height: 50%;
 }
@@ -18,7 +18,7 @@ height: 50%;
 .vino1 {
     display: block;
     height: 100vh;
-    
+    margin-left: 10rem;
     
 }
 .vino2 {
@@ -44,6 +44,10 @@ height: 50%;
   display: block;
   margin-left: auto;
 }
+.titulo{
+    background-color: black;
+
+}
 .card{
     background: 191, 205, 224;
     box-shadow:  5px 5px 10px #0305229c,
@@ -51,9 +55,10 @@ height: 50%;
    display: block;
    width: 18em; 
    height: 18rem;
-   margin-top: 20%;
+   margin-top: 10%;
    align-items: center;
    text-align: center;
+   background-color: #ffffff10;
    
 }
 .card4{
