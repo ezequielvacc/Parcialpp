@@ -1,0 +1,298 @@
+:root {
+    --primary-color: #333;
+}
+*{
+   
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.body{
+    height: 100vh;
+    background-color: var(--primary-color);
+    font-size: 1rem;
+    overflow-x: hidden;
+}
+
+html{
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+
+.logo{
+    max-width: 4.5rem;
+    max-height: 4.5rem;
+   
+ 
+}
+/* navbar*/
+
+.navbar {
+    width: 100vw;
+    background-color: #333;
+    color: #fff;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    height: 5rem;
+    position: relative;
+    
+}
+
+.menu-button {
+  
+    background: none;
+    border: none;
+    font-size: 2.4rem;
+    color: #fff;
+    cursor: pointer;
+    margin-right: 3rem;
+}
+.menu {
+    position: fixed; /* Cambia a position: fixed */
+    top: 0;
+    right: -25rem;
+    bottom: 0; /* Agrega un fondo que cubra toda la página */
+    width: 25rem;
+    background-color: rgb(0, 0, 0); /* Fondo oscuro o translúcido */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 2rem;
+    transition: right 0.3s ease;
+    z-index: 1;
+}
+
+.menu a {
+    color: #fff;
+    text-decoration: none;
+    margin-bottom: 1rem;
+    font-size: 1.8rem;
+}
+
+.menu.active {
+    right: 0;
+}
+.content {
+    margin-right: 0; /* Inicialmente sin margen a la derecha */
+    transition: margin-right 0.3s ease;
+}
+
+
+
+/* Añade margen a la derecha cuando el menú está activo */
+.menu.active + .content {
+    margin-right: 25rem;
+}
+/* carousel*/
+.carousel {
+    max-height:50%;
+}
+.carousel .slide{
+    height: 60vh;
+}
+.carousel-inner{
+    height: 60vh;
+}
+/* estilo de las tarjetas */
+.main{
+    
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    
+
+}
+.tarje{
+    flex-grow: 1;
+    flex-basis: 200;
+    height: 45rem;
+    width: 30rem;
+    margin: 1rem;
+    padding-top: 20rem;
+    transition: 300ms;
+   display: block;
+    transition: opacity 0.5s ease, transform 0.5s ease;
+    overflow: hidden;
+}
+.prod{
+    height: 30rem;
+    width: 30rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10%;
+    background-color: rgb(141, 4, 36);
+    transition: 300ms;
+    position: absolute;
+    
+     
+}
+.img-prod{
+    position: relative;
+    bottom: 2rem;
+    height: 35rem;
+    width: 25rem;
+    display: block;
+    background-image:url(../img/Imagen.png);
+    background-size: cover;
+    margin-bottom: 25rem;
+    transition: 300ms;
+    filter: drop-shadow(0.5rem -0.4rem 1rem black);
+
+}
+.img-prod1{
+    position: relative;
+    bottom: 2rem;
+    height: 35rem;
+    width: 25rem;
+    display: block;
+    background-image:url(../img/Imagen3.png);
+    background-size: cover;
+    margin-bottom: 25rem;
+    transition: 300ms;
+    filter: drop-shadow(0.5rem -0.4rem 1rem black);
+
+}
+.img-prod2{
+    position: relative;
+    bottom: 2rem;
+    height: 35rem;
+    width: 25rem;
+    display: block;
+    background-image:url(../img/Imagen2.png);
+    background-size: cover;
+    margin-bottom: 25rem;
+    transition: 300ms;
+    filter: drop-shadow(0.5rem -0.4rem 1rem black);
+
+}
+.img-prod3{
+    position: relative;
+    bottom: 2rem;
+    height: 35rem;
+    width: 25rem;
+    display: block;
+    background-image:url(../img/Imagen4.png);
+    background-size: cover;
+    margin-bottom: 25rem;
+    transition: 300ms;
+    filter: drop-shadow(0.5rem -0.4rem 1rem black);
+
+}
+.img-prod4{
+    position: relative;
+    bottom: 2rem;
+    height: 35rem;
+    width: 25rem;
+    display: block;
+    background-image:url(../img/Imagen5.png);
+    background-size: cover;
+    margin-bottom: 25rem;
+    transition: 300ms;
+    filter: drop-shadow(0.5rem -0.4rem 1rem black);
+
+}
+.img-prod5{
+    position: relative;
+    bottom: 2rem;
+    height: 35rem;
+    width: 25rem;
+    display: block;
+    background-image:url(../img/Imagen6.png);
+    background-size: cover;
+    margin-bottom: 25rem;
+    transition: 300ms;
+    filter: drop-shadow(0.5rem -0.4rem 1rem black);
+
+}
+.contenido{
+    height: 20rem;
+    width: 30rem;
+    background-color: aliceblue;
+    position: absolute;
+    border-bottom-left-radius: 10%;
+    border-bottom-right-radius: 10%;
+    margin-top: 15rem;
+    z-index: 2;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    transition: 300ms;
+    border-top:3px solid black;
+    
+
+}
+.contenido p{
+    text-align: center;
+    font-size: medium;
+}
+.contenido h2{
+    text-align: center;
+    font-size: medium;
+}
+/*title*/
+.title img{
+    width: 100%; /* La imagen se ajustará al ancho del contenedor */
+    height: 100%; /* Mantendrá la altura del contenedor */
+    object-fit: cover; /* Cubre todo el contenedor */
+    object-position: top; /* Alinea la parte superior de la imagen en el contenedor */
+    display: block;
+
+} 
+.title{
+    padding-top: 3rem;
+    max-height:14rem;
+    width: 100vw;
+    overflow: hidden;
+}
+/* banner*/
+.divid img{
+    width: 100%; /* La imagen se ajustará al ancho del contenedor */
+    height: 100%; /* Mantendrá la altura del contenedor */
+    object-fit: cover; /* Cubre todo el contenedor */
+    object-position: top; /* Alinea la parte superior de la imagen en el contenedor */
+    display: block;
+
+} 
+.divid{
+    max-height:3rem;
+    width: 100vw;
+    overflow: hidden;
+}
+/* ws*/
+/* Estilos base para el botón de WhatsApp */
+.whatsapp-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 999; /* Asegura que esté por encima de otros elementos */
+}
+
+/* Estilos para el icono */
+.whatsapp-button a {
+    text-decoration: none;
+}
+
+.whatsapp-button img {
+    width: 50px; /* Tamaño del icono de WhatsApp */
+    border: 1px solid #25d366; /* Borde con el color de WhatsApp */
+    border-radius: 50%; /* Forma circular del botón */
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2); /* Sombra suave */
+}
+
+/* Efecto hover */
+.whatsapp-button:hover img {
+    background-color: #128c7e; /* Cambia el color de fondo al pasar el mouse */
+    border-color: #128c7e;
+    filter:opacity(30%)
+}
+/*cel*/
+@media screen and (max-width: 600px) {
+    .carousel .slide{
+        height: auto;
+    }
+    .carousel-inner{
+        height: auto;
+    }
+  }

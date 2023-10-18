@@ -1,0 +1,127 @@
+*{
+    margin: 0;
+    padding: 0; 
+}
+.html{
+    overflow-x: hidden;
+    font-size: 62.5%;
+}
+.body{
+    background-image:radial-gradient(rgb(255, 255, 255),rgb(106, 197, 250));
+    overflow-x: hidden;
+}
+.box1{
+    height: 100vh;
+    width: 100vw;
+    display:flex;
+    justify-content:space-between;
+}
+.vino1{
+    max-height: 100%;
+    max-width: 100%; /* La imagen no será más ancha que su contenedor */
+     
+    display: block; /* Asegura que la imagen no tenga espacios en blanco alrededor */
+}
+.titulo-card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 3rem;
+    text-align: center;
+    margin-right: 5rem;
+
+
+}
+.titulo{
+text-decoration: underline;
+text-decoration-color:white;
+}
+.card{
+    background-color: rgba(245, 245, 220, 0.277);
+
+
+}
+.box2{
+    height: 100vh;
+    display:flex;
+    justify-content:space-between;
+    margin: 10rem;
+
+}
+.vino2{
+    width:30rem;
+}
+.titulo-card2{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 3rem;
+    text-align: center;
+
+
+}
+.titulo2{
+text-decoration: underline;
+text-decoration-color:white;
+}
+.card2{
+    background-color: rgba(245, 245, 220, 0.277);
+
+
+}
+.box3{
+    height: 100vh;
+    display:flex;
+    justify-content:space-between;
+    margin: 10rem;
+
+}
+.vino3{
+    width:30rem;
+}
+.titulo-card3{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 3rem;
+    text-align: center;
+
+
+}
+.titulo3{
+text-decoration: underline;
+text-decoration-color:white;
+}
+.card3{
+    background-color: rgba(245, 245, 220, 0.277);
+
+
+}
+.box4{
+    height: 100vh;
+    display:flex;
+    justify-content:space-between;
+    margin: 10rem;
+
+}
+.vino4{
+    width:30rem;
+}
+.titulo-card4{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 3rem;
+    text-align: center;
+
+
+}
+.titulo4{
+text-decoration: underline;
+text-decoration-color:white;
+}
+.card4{
+    background-color: rgba(245, 245, 220, 0.277);
+
+
+}

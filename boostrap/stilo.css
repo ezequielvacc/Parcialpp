@@ -1,0 +1,26 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+.body{
+    font-size: medium;
+}
+.nav{
+    background-color: aqua;
+    display: flex;
+    justify-content: space-between;
+}
+.nave{
+    display: flex;
+    justify-content: center;
+}
+.dat{
+    background-color: aquamarine;
+    display: flex;
+    justify-content: center;
+}
