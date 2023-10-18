@@ -135,7 +135,7 @@ html{
     height: 35rem;
     width: 25rem;
     display: block;
-    background-image:url(./img/Imagen.png);
+    background-image:url(../img/Imagen.png);
     background-size: cover;
     margin-bottom: 25rem;
     transition: 300ms;
@@ -148,7 +148,7 @@ html{
     height: 35rem;
     width: 25rem;
     display: block;
-    background-image:url(./img/Imagen3.png);
+    background-image:url(../img/Imagen3.png);
     background-size: cover;
     margin-bottom: 25rem;
     transition: 300ms;
@@ -161,7 +161,7 @@ html{
     height: 35rem;
     width: 25rem;
     display: block;
-    background-image:url(./img/Imagen2.png);
+    background-image:url(../img/Imagen2.png);
     background-size: cover;
     margin-bottom: 25rem;
     transition: 300ms;
@@ -174,7 +174,7 @@ html{
     height: 35rem;
     width: 25rem;
     display: block;
-    background-image:url(./img/Imagen4.png);
+    background-image:url(../img/Imagen4.png);
     background-size: cover;
     margin-bottom: 25rem;
     transition: 300ms;
@@ -187,7 +187,7 @@ html{
     height: 35rem;
     width: 25rem;
     display: block;
-    background-image:url(./img/Imagen5.png);
+    background-image:url(../img/Imagen5.png);
     background-size: cover;
     margin-bottom: 25rem;
     transition: 300ms;
@@ -200,7 +200,7 @@ html{
     height: 35rem;
     width: 25rem;
     display: block;
-    background-image:url(./img/Imagen6.png);
+    background-image:url(../img/Imagen6.png);
     background-size: cover;
     margin-bottom: 25rem;
     transition: 300ms;
