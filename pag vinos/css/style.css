@@ -48,6 +48,7 @@ html{
     cursor: pointer;
     margin-right: 3rem;
 }
+
 .menu {
     position: fixed; /* Cambia a position: fixed */
     top: 0;
@@ -60,7 +61,7 @@ html{
     align-items: flex-start;
     padding: 2rem;
     transition: right 0.3s ease;
-    z-index: 3;
+    z-index: 999;
 }
 
 .menu a {
@@ -72,7 +73,9 @@ html{
 
 .menu.active {
     right: 0;
+   
 }
+
 .content {
     margin-right: 0; /* Inicialmente sin margen a la derecha */
     transition: margin-right 0.3s ease;
@@ -83,6 +86,18 @@ html{
 /* Añade margen a la derecha cuando el menú está activo */
 .menu.active + .content {
     margin-right: 25rem;
+}
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7); /* Fondo oscuro semi-transparente */
+    z-index: 998; /* Z-index detrás del menú */
+    opacity: 0; /* Inicialmente transparente */
+    pointer-events: none; /* Evita eventos en el overlay */
+    transition: opacity 0.3s; /* Efecto de transición de opacidad */
 }
 /* carousel*/
 .carousel {
