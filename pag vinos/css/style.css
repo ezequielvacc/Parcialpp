@@ -1,6 +1,6 @@
 :root {
-    --primary-color: #1c000a;
-    --secondary-color:#8a0505;
+    --primary-color: #490202;
+    --secondary-color:#5b4e4e;
 
 }
 *{
@@ -31,7 +31,7 @@ html{
 
 .navbar {
     width: 100vw;
-    background-color:var(--secondary-color);
+    background: linear-gradient(to bottom,#000000, #490202 );
     color: #fff;
     display: flex;
     justify-content:space-between;
@@ -58,7 +58,7 @@ html{
     right: -25rem;
     bottom: 0; /* Agrega un fondo que cubra toda la página */
     width: 25rem;
-    background-color: rgb(0, 0, 0); /* Fondo oscuro o translúcido */
+    background: linear-gradient(to bottom, #390101, #040101);/* Fondo oscuro o translúcido */
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -73,7 +73,28 @@ html{
     margin-bottom: 1rem;
     font-size: 1.8rem;
 }
+#in{
+    margin-bottom: 5rem;
+}
 
+.menu a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.menu a:hover {
+    text-decoration: underline;
+}
+
+.menu .menu-footer-text {
+    position: absolute; /* Establece la posición absoluta */
+    bottom: 0; /* Lo coloca en la parte inferior del menú */
+    left: 0; /* Lo coloca en el lado izquierdo del menú */
+    color: #999;
+    font-size: 12px; /* Puedes ajustar el tamaño de fuente según tus preferencias */
+    text-align: center; /* Para centrar el texto en el "footer" del menú */
+    width: 100%; /* Asegura que ocupe todo el ancho del menú */
+}
 .menu.active {
     right: 0;
    
@@ -133,6 +154,7 @@ html{
    display: block;
     transition: opacity 0.5s ease, transform 0.5s ease;
     overflow: hidden;
+    
 }
 .prod{
     height: 30rem;
@@ -141,10 +163,10 @@ html{
     justify-content: center;
     align-items: center;
     border-radius: 10%;
-    background-color: rgb(141, 4, 36);
+    background: linear-gradient(to bottom, #390101, #000000);
     transition: 300ms;
     position: absolute;
-    
+    border: 2px solid rgb(29, 28, 28);
      
 }
 .img-prod{
@@ -189,8 +211,8 @@ html{
 .img-prod3{
     position: relative;
     bottom: 2rem;
-    height: 35rem;
-    width: 25rem;
+    height: 29rem;
+    width: 22rem;
     display: block;
     background-image:url(../img/Imagen4.png);
     background-size: cover;
@@ -202,7 +224,7 @@ html{
 .img-prod4{
     position: relative;
     bottom: 2rem;
-    height: 35rem;
+    height: 28rem;
     width: 25rem;
     display: block;
     background-image:url(../img/Imagen5.png);
@@ -215,7 +237,7 @@ html{
 .img-prod5{
     position: relative;
     bottom: 2rem;
-    height: 35rem;
+    height: 33rem;
     width: 25rem;
     display: block;
     background-image:url(../img/Imagen6.png);
@@ -228,7 +250,7 @@ html{
 .contenido{
     height: 20rem;
     width: 30rem;
-    background-color: aliceblue;
+    background: linear-gradient(to bottom, #e4e0e0, #dbd9d9);
     position: absolute;
     border-bottom-left-radius: 10%;
     border-bottom-right-radius: 10%;
@@ -256,6 +278,7 @@ html{
     object-fit: cover; /* Cubre todo el contenedor */
     object-position: top; /* Alinea la parte superior de la imagen en el contenedor */
     display: block;
+    border-top: 2px solid rgb(218, 175, 4);
 
 } 
 .title{
@@ -263,6 +286,8 @@ html{
     max-height:14rem;
     width: 100vw;
     overflow: hidden;
+    
+    border-bottom: 2px solid rgb(218, 175, 4);
 }
 /* banner*/
 .divid img{
@@ -271,12 +296,16 @@ html{
     object-fit: cover; /* Cubre todo el contenedor */
     object-position: top; /* Alinea la parte superior de la imagen en el contenedor */
     display: block;
+    
 
 } 
 .divid{
     max-height:3rem;
     width: 100vw;
     overflow: hidden;
+    border-top: 2px solid rgb(218, 175, 4);
+    border-bottom: 2px solid rgb(218, 175, 4);
+   
 }
 /* ws*/
 /* Estilos base para el botón de WhatsApp */
@@ -305,6 +334,175 @@ html{
     border-color: #128c7e;
     filter:opacity(30%)
 }
+/* footer*/
+.site-footer {
+    background-color: #8B0000;
+    padding: 3rem 0;
+    color: white;
+    text-align: center;
+    font-family: 'Arial', sans-serif;
+    margin-top: 20rem;
+     position: relative;
+     z-index: 2;
+     
+}
+
+   
+
+.footer-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    z-index: 2;
+    
+}
+
+.footer-section {
+    z-index: 2;
+    
+    flex: 1;
+    margin: 1rem;
+    padding: 2rem;
+    text-align: left;
+    background-color: #63000042; /* Color de fondo para las columnas */
+    border-radius: 0.5rem;
+}
+
+.footer-section h3 {
+    font-size: 1.8rem; /* Tamaño de fuente reducido para un aspecto más delicado */
+    margin-bottom: 1rem;
+}
+
+.footer-section p {
+    font-size: 1.4rem; /* Tamaño de fuente más pequeño para un aspecto delicado */
+    margin-bottom: 1rem;
+}
+
+.social-icons {
+    list-style: none;
+    padding: 0;
+}
+
+.social-icons li {
+    margin: 0 1rem;
+}
+
+.social-icons a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: white;
+    font-size: 1.4rem; /* Tamaño de fuente más pequeño para los iconos */
+}
+
+.social-icons a i {
+    font-size: 1.6rem; /* Tamaño de fuente ligeramente más grande para los iconos */
+    margin-right: 0.5rem;
+}
+
+/* Estilos para los íconos de redes sociales */
+.social-icons a i {
+    color: #fff;
+}
+
+.social-icons a:hover i {
+    color: #080000; /* Color al pasar el mouse sobre los íconos */
+}
+/* wave */
+
+
+.wave {
+    position: absolute;
+    top: -1rem;
+    left: 0;
+    right: 0;
+    border-radius: 100%;
+    height: 3rem; /* Altura de la onda */
+    background-color: #8b0000a0; /* Mismo color que el fondo del footer */
+    animation: wave 3s infinite linear; 
+    z-index: 1;/* Duración y repetición de la animación */
+}
+.wave1 {
+    position: absolute;
+    top: -1rem;
+    left: 0;
+    right: 0;
+    border-radius: 100%;
+    height: 6rem; /* Altura de la onda */
+    background-color: #8b000048; /* Mismo color que el fondo del footer */
+    animation: wave1 6s infinite linear; 
+    z-index: 1;
+    /* Duración y repetición de la animación */
+}
+.wave2 {
+    position: absolute;
+    top: -1rem;
+    left: 0;
+    right: 0;
+    border-radius: 100%;
+    height: 5rem; /* Altura de la onda */
+    background-color: #8B0000; /* Mismo color que el fondo del footer */
+    animation: wave2 4s infinite linear; 
+    z-index: 1;
+    /* Duración y repetición de la animación */
+}
+.wave3 {
+    position: absolute;
+    top: -1rem;
+    left: 0;
+    right: 0;
+    border-radius: 100%;
+    height: 5rem; /* Altura de la onda */
+    background-color: #8B0000; /* Mismo color que el fondo del footer */
+    animation: wave3 4s infinite linear; 
+    z-index: 1;
+    /* Duración y repetición de la animación */
+}
+@keyframes wave {
+    100% {
+        transform: translateX(100%);
+    }
+    50% {
+        transform: translateX(0%);
+    }
+     0%{
+        transform: translateX(-100%);
+    }
+}
+@keyframes wave1 {
+    0% {
+        transform: translateX(100%);
+    }
+    50% {
+        transform: translateX(0%);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+@keyframes wave2 {
+    0% {
+        transform: translateX(0%);
+    }
+    50% {
+        transform: translateX(100%);
+    }
+    100% {
+        transform: translateX(0%);
+    }
+}
+@keyframes wave3 {
+    0% {
+        transform: translateX(0%);
+    }
+    50% {
+        transform: translateX(100%);
+    }
+    100% {
+        transform: translateX(0%);
+    }
+}
+
 /*cel*/
 @media screen and (max-width: 600px) {
     .carousel .slide{
