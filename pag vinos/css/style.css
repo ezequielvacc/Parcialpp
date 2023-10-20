@@ -336,7 +336,7 @@ html{
 }
 /* footer*/
 .site-footer {
-    background-color: #8B0000;
+    background-color: #000000;
     padding: 3rem 0;
     color: white;
     text-align: center;
@@ -364,7 +364,7 @@ html{
     margin: 1rem;
     padding: 2rem;
     text-align: left;
-    background-color: #63000042; /* Color de fondo para las columnas */
+    background-color: #0b0a0a00; /* Color de fondo para las columnas */
     border-radius: 0.5rem;
 }
 
@@ -411,104 +411,16 @@ html{
 /* wave */
 
 
-.wave {
-    position: absolute;
-    top: -1rem;
-    left: 0;
-    right: 0;
-    border-radius: 100%;
-    height: 3rem; /* Altura de la onda */
-    background-color: #8b0000a0; /* Mismo color que el fondo del footer */
-    animation: wave 3s infinite linear; 
-    z-index: 1;/* Duración y repetición de la animación */
-}
-.wave1 {
-    position: absolute;
-    top: -1rem;
-    left: 0;
-    right: 0;
-    border-radius: 100%;
-    height: 6rem; /* Altura de la onda */
-    background-color: #8b000048; /* Mismo color que el fondo del footer */
-    animation: wave1 6s infinite linear; 
-    z-index: 1;
-    /* Duración y repetición de la animación */
-}
-.wave2 {
-    position: absolute;
-    top: -1rem;
-    left: 0;
-    right: 0;
-    border-radius: 100%;
-    height: 5rem; /* Altura de la onda */
-    background-color: #8B0000; /* Mismo color que el fondo del footer */
-    animation: wave2 4s infinite linear; 
-    z-index: 1;
-    /* Duración y repetición de la animación */
-}
-.wave3 {
-    position: absolute;
-    top: -1rem;
-    left: 0;
-    right: 0;
-    border-radius: 100%;
-    height: 5rem; /* Altura de la onda */
-    background-color: #8B0000; /* Mismo color que el fondo del footer */
-    animation: wave3 4s infinite linear; 
-    z-index: 1;
-    /* Duración y repetición de la animación */
-}
-@keyframes wave {
-    100% {
-        transform: translateX(100%);
-    }
-    50% {
-        transform: translateX(0%);
-    }
-     0%{
-        transform: translateX(-100%);
-    }
-}
-@keyframes wave1 {
-    0% {
-        transform: translateX(100%);
-    }
-    50% {
-        transform: translateX(0%);
-    }
-    100% {
-        transform: translateX(-100%);
-    }
-}
-@keyframes wave2 {
-    0% {
-        transform: translateX(0%);
-    }
-    50% {
-        transform: translateX(100%);
-    }
-    100% {
-        transform: translateX(0%);
-    }
-}
-@keyframes wave3 {
-    0% {
-        transform: translateX(0%);
-    }
-    50% {
-        transform: translateX(100%);
-    }
-    100% {
-        transform: translateX(0%);
-    }
-}
+
 
 /*cel*/
 @media screen and (max-width: 600px) {
+    .html{overflow-x: hidden;}
     .carousel .slide{
         height: auto;
     }
     .carousel-inner{
         height: auto;
     }
+  
   }
