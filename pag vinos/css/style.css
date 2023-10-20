@@ -1,5 +1,7 @@
 :root {
-    --primary-color: #333;
+    --primary-color: #1c000a;
+    --secondary-color:#8a0505;
+
 }
 *{
    
@@ -29,13 +31,14 @@ html{
 
 .navbar {
     width: 100vw;
-    background-color: #333;
+    background-color:var(--secondary-color);
     color: #fff;
     display: flex;
     justify-content:space-between;
     align-items: center;
     height: 5rem;
     position: relative;
+    
     
 }
 
