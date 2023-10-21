@@ -1,7 +1,11 @@
 :root {
-    --primary-color: #490202;
-    --secondary-color:#5b4e4e;
-
+    --color-principal: #880808; /* Rojo vino */
+    --color-secundario-1: #B35D3F; /* Terracota */
+    --color-secundario-2: #D8A06A; /* Amarillo dorado */
+    --color-secundario-3: #54280E; /* Marrón oscuro */
+    --color-texto: #fffefe; /* Gris oscuro */
+    --color-fondo: #e6e5e5; /* Gris claro */
+    --color-enfasis: #AE2020; /* Rojo intenso */
 }
 *{
    
@@ -11,7 +15,7 @@
 }
 .body{
     height: 100vh;
-    background-color: var(--primary-color);
+    background-color: var(--color-fondo);
     font-size: 1rem;
     overflow-x: hidden;
 }
@@ -31,8 +35,8 @@ html{
 
 .navbar {
     width: 100vw;
-    background: linear-gradient(to bottom,#000000, #490202 );
-    color: #fff;
+    background: var(--color-principal);
+    color: var(--color-texto);
     display: flex;
     justify-content:space-between;
     align-items: center;
@@ -47,9 +51,12 @@ html{
     background: none;
     border: none;
     font-size: 2.4rem;
-    color: #fff;
+    color: var(--color-texto);
     cursor: pointer;
-    margin-right: 3rem;
+    margin-right: 2.7rem;
+}
+.menu-button:hover {
+  color: #000000;
 }
 
 .menu {
@@ -58,8 +65,8 @@ html{
     right: -25rem;
     bottom: 0; /* Agrega un fondo que cubra toda la página */
     width: 25rem;
-    background: linear-gradient(to bottom, #390101, #040101);/* Fondo oscuro o translúcido */
-    display: flex;
+    background:var(--color-principal);
+     display: flex;
     flex-direction: column;
     align-items: flex-start;
     padding: 2rem;
@@ -68,7 +75,7 @@ html{
 }
 
 .menu a {
-    color: #fff;
+    color:var(--color-texto);
     text-decoration: none;
     margin-bottom: 1rem;
     font-size: 1.8rem;
@@ -77,12 +84,10 @@ html{
     margin-bottom: 5rem;
 }
 
-.menu a {
-    color: #fff;
-    text-decoration: none;
-}
+
 
 .menu a:hover {
+    color: rgb(188, 187, 187);
     text-decoration: underline;
 }
 
@@ -163,7 +168,7 @@ html{
     justify-content: center;
     align-items: center;
     border-radius: 10%;
-    background: linear-gradient(to bottom, #390101, #000000);
+    background: linear-gradient(to bottom, var(--color-principal), #000000);
     transition: 300ms;
     position: absolute;
     border: 2px solid rgb(29, 28, 28);
@@ -193,6 +198,7 @@ html{
     margin-bottom: 25rem;
     transition: 300ms;
     filter: drop-shadow(0.5rem -0.4rem 1rem black);
+    
 
 }
 .img-prod2{
@@ -247,10 +253,19 @@ html{
     filter: drop-shadow(0.5rem -0.4rem 1rem black);
 
 }
+.contenido p{
+    color: var(--color-texto);
+}
+.contenido h2{
+    color: var(--color-texto);
+    
+    
+}
 .contenido{
     height: 20rem;
     width: 30rem;
-    background: linear-gradient(to bottom, #e4e0e0, #dbd9d9);
+    background: linear-gradient(to bottom,var(--color-secundario-3),var(--color-secundario-3));
+    
     position: absolute;
     border-bottom-left-radius: 10%;
     border-bottom-right-radius: 10%;
@@ -272,22 +287,32 @@ html{
     font-size: medium;
 }
 /*title*/
-.title img{
+.title h2{
     width: 100%; /* La imagen se ajustará al ancho del contenedor */
     height: 100%; /* Mantendrá la altura del contenedor */
     object-fit: cover; /* Cubre todo el contenedor */
-    object-position: top; /* Alinea la parte superior de la imagen en el contenedor */
     display: block;
-    border-top: 2px solid rgb(218, 175, 4);
+    position: relative;
+    bottom: 1rem;
+    color: var(--color-texto);
+    text-align: center;
+
+    font-size: 3.1rem;
+    font-family: 'Cinzel', serif;
+    
+
+    
+    
 
 } 
 .title{
-    padding-top: 3rem;
-    max-height:14rem;
+    padding-top: 4rem;
+    padding-bottom: 2rem;
+    max-height:15rem;
     width: 100vw;
     overflow: hidden;
-    
-    border-bottom: 2px solid rgb(218, 175, 4);
+    background: var(--color-secundario-1);
+    border-bottom: 2px solid var(--color-enfasis);
 }
 /* banner*/
 .divid img{
@@ -300,32 +325,99 @@ html{
 
 } 
 .divid{
-    max-height:3rem;
+    max-height:10rem;
     width: 100vw;
+    margin-top: 12rem;
     overflow: hidden;
-    border-top: 2px solid rgb(218, 175, 4);
-    border-bottom: 2px solid rgb(218, 175, 4);
+    border-top: 1rem solid  var(--color-enfasis);
+    border-bottom: 1rem solid var(--color-enfasis);
+   
+}.divid1 img{
+    width: 100%; /* La imagen se ajustará al ancho del contenedor */
+    height: 100%; /* Mantendrá la altura del contenedor */
+    object-fit: cover; /* Cubre todo el contenedor */
+    object-position: top; /* Alinea la parte superior de la imagen en el contenedor */
+    display: block;
+    
+
+} 
+.divid1{
+    max-height:10rem;
+    width: 100vw;
+    margin-top: 12rem;
+    overflow: hidden;
+    border-top: 1rem solid  var(--color-enfasis);
+    border-bottom: 1rem solid var(--color-enfasis);
    
 }
 /* ws*/
 /* Estilos base para el botón de WhatsApp */
 .whatsapp-button {
+    display: flex;
     position: fixed;
-    bottom: 20px;
-    right: 20px;
+    bottom: 2rem;
+    right: 2rem;
     z-index: 999; /* Asegura que esté por encima de otros elementos */
+}
+/*volver*/
+#scrollToTopBtn {
+    display: block;
+    position: fixed;
+    bottom: 8rem;
+    right: 1.9rem;
+    background-color: #333;
+    color: #fff;
+    font-size: medium;
+    padding: 10px 18px;
+    border: none;
+    border-radius: 14rem;
+    cursor: pointer;
+    opacity: 0;
+    transition: opacity 0.5s;
+    z-index: 998;
 }
 
 /* Estilos para el icono */
+
+.pop {
+    position: fixed;
+    bottom: 5rem;
+    right: 6rem;
+    background-color: var(--color-secundario-2);
+    border-radius: 30%;
+    height: calc(auto + 1rem);
+    width: calc(auto + 1rem);
+    display: block;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s, visibility 0.3s;
+    
+    
+    
+}
+.pop p{
+    display: block;
+    position: relative;
+    top: 0.5rem;
+    text-align: center;
+    align-items: center;
+    font-size: large;
+}
+.whatsapp-button:hover .pop {
+   display: block;
+   opacity: 1;
+   visibility: visible;
+}
 .whatsapp-button a {
     text-decoration: none;
 }
 
 .whatsapp-button img {
-    width: 50px; /* Tamaño del icono de WhatsApp */
-    border: 1px solid #25d366; /* Borde con el color de WhatsApp */
+    width: 6rem; /* Tamaño del icono de WhatsApp */
+    border: 4px solid #25d366; /* Borde con el color de WhatsApp */
     border-radius: 50%; /* Forma circular del botón */
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.2); /* Sombra suave */
+    transition: all 0.2s;
 }
 
 /* Efecto hover */
@@ -336,46 +428,31 @@ html{
 }
 /* footer*/
 .site-footer {
-    background-color: #000000;
-    padding: 3rem 0;
-    color: white;
-    text-align: center;
-    font-family: 'Arial', sans-serif;
-    margin-top: 20rem;
-     position: relative;
-     z-index: 2;
-     
+    margin-top: 10rem;
+    background-color: #333; /* Cambiar el color de fondo */
+    color: #fff; /* Cambiar el color del texto */
+    padding: 50px 0; /* Agregar espacio alrededor del contenido */
 }
 
-   
-
-.footer-content {
+.container-footer {
+    max-width: 1200px; /* Limitar el ancho máximo del contenido */
+    margin: 0 auto; /* Centrar el contenido horizontalmente */
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    z-index: 2;
-    
+    justify-content: space-between;
 }
 
 .footer-section {
-    z-index: 2;
-    
     flex: 1;
-    margin: 1rem;
-    padding: 2rem;
-    text-align: left;
-    background-color: #0b0a0a00; /* Color de fondo para las columnas */
-    border-radius: 0.5rem;
+    padding: 20px;
 }
 
-.footer-section h3 {
-    font-size: 1.8rem; /* Tamaño de fuente reducido para un aspecto más delicado */
-    margin-bottom: 1rem;
+h3 {
+    font-size: 20px; /* Ajustar el tamaño del encabezado */
+    margin-bottom: 10px;
 }
 
-.footer-section p {
-    font-size: 1.4rem; /* Tamaño de fuente más pequeño para un aspecto delicado */
-    margin-bottom: 1rem;
+p {
+    font-size: 16px; /* Ajustar el tamaño del texto */
 }
 
 .social-icons {
@@ -384,29 +461,18 @@ html{
 }
 
 .social-icons li {
-    margin: 0 1rem;
+    margin-bottom: 10px;
 }
 
 .social-icons a {
+    color: #fff; /* Cambiar el color de los enlaces */
+    text-decoration: none;
     display: flex;
     align-items: center;
-    text-decoration: none;
-    color: white;
-    font-size: 1.4rem; /* Tamaño de fuente más pequeño para los iconos */
 }
 
-.social-icons a i {
-    font-size: 1.6rem; /* Tamaño de fuente ligeramente más grande para los iconos */
-    margin-right: 0.5rem;
-}
-
-/* Estilos para los íconos de redes sociales */
-.social-icons a i {
-    color: #fff;
-}
-
-.social-icons a:hover i {
-    color: #080000; /* Color al pasar el mouse sobre los íconos */
+.social-icons i {
+    margin-right: 10px;
 }
 /* wave */
 

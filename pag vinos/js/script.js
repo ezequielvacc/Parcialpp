@@ -40,5 +40,23 @@ document.addEventListener('DOMContentLoaded', function () {
         }
     });
 });
+/*volver */
+// Función para mostrar u ocultar el botón basado en la posición de desplazamiento
+window.onscroll = function() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        document.getElementById("scrollToTopBtn").style.opacity = "1";
+        
+    } else {
+        document.getElementById("scrollToTopBtn").style.opacity = "0";
+        
+    }
+};
+
+// Función para desplazarse al principio de la página
+function scrollToTop() {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+}
+
 
 
