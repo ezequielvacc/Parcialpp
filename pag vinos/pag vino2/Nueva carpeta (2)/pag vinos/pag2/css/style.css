@@ -1,0 +1,124 @@
+/* Estilos generales */
+/* Establecer el tamaño de fuente base en base a la fuente preferida del usuario o un valor estándar. */
+html {
+    font-size: 16px; /* Esto es un valor de ejemplo; puedes ajustarlo según tus preferencias. */
+}
+
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+}
+
+/* Navbar */
+.navbar {
+    background-color: #333;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+}
+
+.logo {
+    font-size: 1.5rem;
+}
+
+.menu-button {
+    background: none;
+    border: none;
+    font-size: 1.25rem;
+    color: #fff;
+    cursor: pointer;
+}
+
+.menu {
+    display: none;
+}
+
+/* Carrusel */
+.carousel {
+    /* Agrega estilos para el carrusel y los puntos de navegación aquí */
+}
+
+/* Separador de contenido */
+.separator {
+    /* Estilos para el separador */
+}
+
+/* Tarjetas */
+.card {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    margin: 1rem;
+    padding: 1rem;
+    max-width: 18rem;
+    box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.2);
+    position: relative; /* Necesario para posicionar la imagen correctamente */
+    overflow: hidden; /* Evita que la imagen sobresalga del contenedor */
+}
+
+.card h2 {
+    font-size: 1.25rem;
+    margin: 0;
+}
+
+.card-content {
+    display: flex;
+    align-items: center;
+}
+
+.card-content img {
+    max-width: 4rem;
+    margin-right: 1rem;
+    /* Hacemos que la imagen sobresalga del contenedor */
+    position: absolute;
+    top: -1rem; /* Ajusta la posición superior para sobresalir */
+    left: -1rem; /* Ajusta la posición izquierda para sobresalir */
+    z-index: 1; /* Asegura que la imagen esté sobre otros elementos */
+    border: 2px solid #fff; /* Un borde blanco para separar la imagen del fondo */
+    border-radius: 0.5rem; /* Agrega bordes redondeados para un aspecto agradable */
+}
+
+.card-content p {
+    flex: 1;
+    margin: 0;
+}
+
+/* Media Queries para diseño responsivo */
+@media screen and (max-width: 48rem) {
+    .navbar {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .menu-button {
+        margin-top: 1rem;
+    }
+
+    .menu {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .carousel {
+        /* Ajusta los estilos del carrusel para dispositivos móviles */
+    }
+
+    .separator {
+        /* Ajusta los estilos del separador para dispositivos móviles */
+    }
+
+    .cards {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card {
+        width: 80%;
+    }
+}
+

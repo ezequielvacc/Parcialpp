@@ -162,9 +162,13 @@ html{
     padding-top: 20rem;
     transition: 300ms;
    display: block;
-    transition: opacity 0.5s ease, transform 0.5s ease;
     overflow: hidden;
     
+}
+.prod:hover{
+    filter: drop-shadow(0.5rem -0.4rem 1rem black);
+   
+
 }
 .prod{
     height: 30rem;
